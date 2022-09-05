@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<!-- Na tag head foram definidas as seguintes configurações:
+* Título, ícone ao lado do título, link para o arquivo css, fonte e link para bootstrap -->
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfólio - Willian Nischiguti</title>
+    <meta name="description" content="Portfólio - Willian Nischiguti">
+    <link rel="icon" href="./favicon.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+        integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+
+<body>
+
+    <!-- Na tag header foram definidas as informações de cabeçalho: 'logo marca' e menu
+    com links. Menu dropdown, utilizando bootstrap para mobile a partir de 440px e menu 
+    normal para outras telas -->
+    <header class="header">
+        <img src="./img/marca.svg" alt="Willian Nischiguti" width="379" height="50">
+
+        <span class="estudante">Estudante ADS</span>
+
+        <div class="dropdown">
+            <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown"
+                aria-expanded="false">
+                menu
+            </button>
+            <ul class="dropdown-menu dropdown-menu-dark">
+                <li><a class="dropdown-item active" href="#experiencia">Experiência</a></li>
+                <li><a class="dropdown-item" href="#formacao">Formação</a></li>
+                <li><a class="dropdown-item" href="#projetos">Projetos</a></li>
+                <li><a class="dropdown-item" href="#contato">Contato</a></li>
+            </ul>
+        </div>
+
+        <nav>
+            <ul class="header-menu">
+                <li><a href="#experiencia" class="badge badge-light">Experiência</a></li>
+                <li><a href="#formacao" class="badge badge-light">Formação</a></li>
+                <li><a href="#projetos" class="badge badge-light">Projetos</a></li>
+                <li><a href="#contato" class="badge badge-light">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Na tag main é exibida a introdução onde aparecem a foto de perfil e título principal -->
+    <main class="intro">
+        <img src="./img/perfil.webp" alt="Willian Nischiguti" width="313" height="315">
+        <h1>Desenvolvedor <br> Back End <br> Estudante ADS</h1>
+    </main>
+
+    <!-- Na section 'experiencia' foram colocas informações breves 'sobre mim' e 
+    experiência profissional (relacionadas a área de TI) -->
+    <section class="experiencia" id="experiencia" aria-label="Experiência">
+
+        <div class="sobre">
+            <h2 class="subtitulo">SOBRE MIM</h2>
+            <p class="sobre-texto">Sou apaixonado por tecnologia, acredito que a tecnologia é essencial para nossa vida
+                e,
+                através dela, podemos transformar rotinas, criar soluções ou resolver problemas.
+                <br> <br>Me considero uma pessoa calma, atento aos detalhes e persistente. Gosto de compartilhar
+                conhecimento e aprender coisas novas.
+            </p>
+        </div>
+
+
+        <div>
+            <p class="experiencia-texto">EXPERIÊNCIA</p>
+
+            <div class="empresa">
+                <span class="empresa-ano">2013-2018</span>
+                <h3 class="empresa-titulo">RCCONSULT</h3>
+                <span class="empresa-titulo">Analista de suporte técnico</span>
+                <p class="empresa-texto">Prestar suporte técnico para as empresas com contrato mensal de suporte. Fazer
+                    backup e atualização do sistema. Fazer manutenção preventiva e corretiva tanto em equipamentos
+                    quanto em tecnologias utilizadas pelo cliente (sistema, e-mail, antivírus, compartilhamento em rede,
+                    softwares em geral, etc).</p>
+            </div>
+
+            <div class="empresa">
+                <span class="empresa-ano">2011-2013</span>
+                <h3 class="empresa-titulo">RCCONSULT</h3>
+                <span class="empresa-titulo">Assistente técnico</span>
+                <p class="empresa-texto">Auxiliar em todas as áreas de atuação da empresa, seja na manutenção de
+                    equipamentos (computadores, notebooks, impressoras), como também em atendimento presencial ou
+                    remoto.</p>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Na section 'formacao' foram colocadas as informações referentes a formação,
+    projetos realizados (links externos para os projetos) e cursos/idioma-->
+    <section class="formacao" id="formacao" aria-label="formacao">
+
+        <div>
+            <h2 class="subtitulo">Formação</h2>
+            <div class="faculdade">
+                <span>Tecnólogo</span>
+                <br>
+                <p>Análise e Desenvolvimento de Sistemas</p>
+                <p>Início em: 06/2021</p>
+                <p>Término previsto: 12/2023</p>
+                <br>
+                <span>Centro Universitário Uninter</span>
+            </div>
+
+        </div>
+
+        <div>
+            <p class="subtitulo2">Projetos e Cursos</p>
+
+            <div class="projetos" id="projetos">
+                <h3>Projetos<h3>
+                        <br>
+                        <h3>
+                            <ul>
+                                <li><a href="https://github.com/williannischiguti/dsmeta" target="_blank">DS Meta</a>
+                                </li>
+                            </ul>
+                        </h3>
+                        <p class="projeto-texto">Desenvolvido durante a semana <strong>Spring React</strong> de 11 a 17
+                            de
+                            julho de 2022.
+                            Principais tecnologias utilizadas: <strong>React JS, Java com Spring
+                                Boot, Postman, Twilio e Heroku.</strong></p>
+                        <br>
+                        <h3>
+                            <ul>
+                                <li><a href="https://github.com/williannischiguti/projeto-bancoDigital-Dio-Java"
+                                        target="_blank">Banco Digital</a></li>
+                            </ul>
+                        </h3>
+                        <p class="projeto-texto">Desenvolvido em <strong>Java</strong>, utilizando os pilares da
+                            <strong>Programação Orientada a Objetos</strong>.
+                        </p>
+            </div>
+
+            <div class="formacao-extra">
+                <div class="cursos">
+                    <h3>Cursos</h3>
+                    <ul>
+                        <li>Java (55% concluído) <span>55h</span></li>
+                    </ul>
+                </div>
+                <br>
+                <div class="idiomas">
+                    <h3>Idiomas</h3>
+                    <ul>
+                        <li>Inglês <span>/ Avançado</span></li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- No footer (rodapé) foram colocadas as informações de contato e também um formulário.
+    Cada campo do formulário possui interação com o javascript com chamada de funções.
+    O formulário também possui uma ação em que se comunica com um arquivo php que faz a validação do e-mail,
+    utiliza o SMTP do servidor de hospedagem e envia as informações do formulário para um e-mail que
+    foi cadastrado no servidor de hospedagem. O botão 'enviar mensagem' está com a estilização do
+    bootstrap. -->
+    <footer class="footer" id="contato">
+        <div>
+            <h2 class="subtitulo">Contato</h2>
+            <ul class="footer-contatos">
+                <li class="contato-email"><a href="mailto:williannischiguti@gmail.com" target="_blank"
+                        rel="noopener noreferrer">&nbsp&nbsp&nbsp williannischiguti@gmail.com</a></li>
+                <li class="contato-linkedin"><a href="https://www.linkedin.com/in/willian-nischiguti/" target="_blank"
+                        rel="noopener noreferrer">&nbsp&nbsp&nbsp linkedin.com/willian-nischiguti</a></li>
+                <li class="contato-github"><a href="https://github.com/williannischiguti" target="_blank"
+                        rel="noopener noreferrer">&nbsp&nbsp&nbsp github.com/williannischiguti</a></li>
+            </ul>
+
+        </div>
+
+        <div>
+            <p class="subtitulo2">Comentários</p>
+            <form name="formContato" action="./enviar.php" class="contato-formulario" method="post">
+                <div>
+                    <label for="nome">Nome</label>
+                    <br>
+                    <input type="text" name="nome" placeholder="Digite seu nome" onkeyup="validarNome(formContato.nome)"
+                        required>
+                    <td>
+                        <div id="validaNome"></div>
+                    </td>
+                </div>
+
+                <div>
+                    <label for="email">E-mail</label>
+                    <br>
+                    <input type="email" name="email" placeholder="Digite seu e-mail"
+                        onkeyup="validarEmail(formContato.email)" required>
+                    <td>
+                        <div id="validaEmail"></div>
+                    </td>
+                </div>
+
+                <div>
+                    <label for="mensagem">Mensagem</label>
+                    <br>
+                    <textarea name="textarea" id="textarea" cols="28" rows="4" placeholder="Digite seu texto aqui"
+                        oninput="contarCaracteres(this.value)" onkeyup="validarTextArea(formContato.textarea)" required></textarea>
+                    <br>
+                    <div>
+                        <td>
+                            <span>Caracteres restantes: </span> <span id="contador">100</span>
+                        </td>
+                        <td>
+                            <div id="validaTextArea"></div>
+                        </td>
+                    </div>
+
+                    <br><br>
+                    <button type="submit" class="btn btn-dark">Enviar mensagem</button>
+                </div>
+            </form>
+
+        </div>
+
+    </footer>
+
+    <!-- A tag script 'chama' o arquivo contato.js, responsável por se comunicar com o formulário,
+    gerando mensagem personalizada no envio ou não envio do formulário e também faz o tratamento do
+    botão de envio, utilizando o método POST.-->
+    <script src="./js/contato.js"></script>
+</body>
+
+</html>
